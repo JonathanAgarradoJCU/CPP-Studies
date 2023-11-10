@@ -4,9 +4,16 @@ using namespace std;
 
 int main()
 {
-    int pennies = 8;
-    int dimes = 4;
-    int quarters = 3;
+    int pennies, dimes, quarters;
+
+    cout << "Enter the number of pennies: ";
+    cin >> pennies;
+
+    cout << "Enter the number of dimes: ";
+    cin >> dimes;
+
+    cout << "Enter the number of quarters: ";
+    cin >> quarters;
 
     double total = pennies * 0.01 + dimes * 0.1 + quarters * 0.25;
         /* total value of the coins */
