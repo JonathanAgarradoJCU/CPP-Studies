@@ -4,7 +4,7 @@ int main()
 {
     double bottles;
     
-    std::cout << "" << std::endl;
+    std::cout << std::endl;
     std::cout << "How many bottles do you have? ";
     std::cin >> bottles;
 
@@ -16,9 +16,9 @@ int main()
     const double CAN_VOLUME = 0.355;
     double total = bottles * BOTTLE_VOLUME + cans * CAN_VOLUME;
 
-    std::cout << "" << std::endl;
+    std::cout << std::endl;
     std::cout << "The total volume is = " << total << "L." << std::endl;
-    std::cout << "" << std::endl;
+    std::cout << std::endl;
 
     return 0;
 }
