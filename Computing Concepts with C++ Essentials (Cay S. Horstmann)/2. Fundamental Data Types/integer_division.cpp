@@ -21,7 +21,7 @@ int main()
     double average = (s1 + s2 + s3) / 3;
 
     cout << endl;
-    cout << "Your average is " << average << endl;
+    cout << "Your average is '" << average << "'." << endl;
     cout << endl;
 
     return 0;
