@@ -19,7 +19,8 @@ int main() {
   std::cout << "Enter the number of elements: ";
   std::cin >> n;
 
-  if (n <= 0) {
+  if (n <= 0)
+  {
     std::cout << "Invalid input. Please enter a positive number of elements." << std::endl;
     return 1;
   }
@@ -28,17 +29,19 @@ int main() {
 
   std::cout << "Enter " << n << " integers:" << std::endl;
 
-  for (int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i++)
+  {
     std::cin >> arr[i];
   }
 
   bubbleSort(arr);
 
   std::cout << "Sorted array in ascending order: ";
-  for (int i = 0; i < arr.size(); i++) {
+  for (int i = 0; i < arr.size(); i++)
+  {
     std::cout << arr[i] << " ";
   }
-  std::cout << std::endl;
 
+  std::cout << std::endl;
   return 0;
 }
