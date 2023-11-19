@@ -3,14 +3,15 @@
 
 using namespace std;
 
-int main()
-{  
-    
-int x { 3 };
-int& y { x };
-y = 4;
-cout << x;
-// output will be "4" 
+    void mysteryFunction(string* const someString)
+    {
+        *someString = "Test";
+    }
 
-    return 0;
-}
+    int main()
+    {
+        string myString { "The string" };
+        mysteryFunction(&myString);
+    }
+
+    // This will compile. The function takes a pointer to a string as a parameter.
